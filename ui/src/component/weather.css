@@ -1,0 +1,31 @@
+/* src/Weather.css */
+
+body {
+    background-color: #121212; /* Dark background */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif;
+  }
+  
+  .weather-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+  }
+  
+  .weather-card {
+    background: rgba(255, 255, 255, 0.1); /* Glassy background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glassy look */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.2s; /* Smooth hover effect */
+    height:500px;
+    width:500px;
+  }
+  
+  .weather-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
